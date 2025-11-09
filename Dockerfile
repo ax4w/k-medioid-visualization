@@ -1,5 +1,5 @@
-# Use Bun for better performance
-FROM oven/bun:1 as builder
+# Use Bun for both building and running
+FROM oven/bun:1
 
 # Set working directory
 WORKDIR /app
@@ -17,17 +17,8 @@ COPY . .
 # Build the application
 RUN bun run build
 
-# Use nginx for serving static files
-FROM nginx:alpine
+# Expose the port the app runs on
+EXPOSE 3000
 
-# Copy nginx configuration (optional, using default for now)
-# COPY nginx.conf /etc/nginx/nginx.conf
-
-# Copy built files to nginx
-COPY --from=builder /app/build /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Command to run the application
+CMD ["bun", "build/index.js"]
