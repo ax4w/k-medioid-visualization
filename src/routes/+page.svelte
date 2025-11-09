@@ -213,8 +213,8 @@
     <div class="flex-1 py-6 px-4 sm:px-6 lg:px-8 overflow-y-auto">
         <div class="max-w-4xl mx-auto h-full flex flex-col">
             <header class="text-center mb-6">
-                <h1 class="text-3xl font-bold text-gray-900">K-Medioid Clustering</h1>
-                <p class="mt-2 text-sm text-gray-600">Interactive visualization of K-Medioid clustering algorithm</p>
+                <h1 class="text-3xl font-bold text-gray-900">K-Medoids Clustering</h1>
+                <p class="mt-2 text-sm text-gray-600">Interactive visualization of K-Medoids clustering algorithm</p>
             </header>
             
             <div class="flex-1 bg-white p-6 rounded-xl shadow-lg mb-6">
