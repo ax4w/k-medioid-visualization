@@ -214,7 +214,7 @@
         <div class="max-w-4xl mx-auto h-full flex flex-col">
             <header class="text-center mb-6">
                 <h1 class="text-3xl font-bold text-gray-900">K-Medoids Clustering</h1>
-                <p class="mt-2 text-sm text-gray-600">Interactive visualization of K-Medoids clustering algorithm</p>
+                <p class="mt-2 text-sm text-gray-600">Interactive visualization of PAM algorithm</p>
             </header>
             
             <div class="flex-1 bg-white p-6 rounded-xl shadow-lg mb-6">
